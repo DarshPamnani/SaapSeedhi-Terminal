@@ -1,15 +1,29 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+using namespace std;
+
+void add_to(Player array[], int size, int index, Player P){
+	if(size >= 0 && size<index){
+		array[size] = P;
+		size++;
+	}
+}
+
 
 //Players
-int p1 = 0;
-int p2 = 0;
-int n = 2;
+struct Player{
+    int position;
+};
+
+Player List_of_Players[4];
+int size = 0;
+
+Player Winners[4];
+int rank = 0; 
 
 //Dice
-int dice_roll(void)
-{
+int dice_roll(void){
     return (rand() % 6) + 1;
 }
 
@@ -41,10 +55,21 @@ void update(int *p){
 	
 int main()
 {
+	int n = 2;
+	for(int i=0; i<n; i++){
+		Player P = {0};
+		add_to(List_of_Players, size, i, P);
+
+	}
+	
+	for(int i=0; i<n; i++){
+		cout << ""
+	}
 	srand((unsigned int)time(NULL));
 	
 	int on_roll;
 	int count = 0;
+
 	while (p1 < 100 && p2 < 100){
 		count++;
 		
