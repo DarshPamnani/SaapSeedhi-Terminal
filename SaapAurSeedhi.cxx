@@ -122,8 +122,8 @@ int main()
 
 
 	//PLAYERS PUTTING
-	int n = 4;  //No. of players
-	
+	int n;  //No. of players
+	cin >> n; cin.get();	//To ignore the newline character after the integer input
 	for(int i=0; i<n; i++){
 		Player P = {0, "Player" + to_string(i + 1)};
 		add_to(List_of_Players, ::size, 4, P);
