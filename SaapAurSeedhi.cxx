@@ -102,7 +102,7 @@ void update(Player &player){
 	}
 
 	int snake_start[5] = {17, 34, 72, 48, 93};
-	int snake_end[5] = {7, 14, 40, 61, 81};
+	int snake_end[5] = {7, 14, 40, 29, 81};
 	
 	for(int i=0; i < 5; i++){
 		if(player.position == snake_start[i]){
@@ -122,8 +122,8 @@ int main()
 
 
 	//PLAYERS PUTTING
-	int n = 2;  //No. of players
-
+	int n = 4;  //No. of players
+	
 	for(int i=0; i<n; i++){
 		Player P = {0, "Player" + to_string(i + 1)};
 		add_to(List_of_Players, ::size, 4, P);
