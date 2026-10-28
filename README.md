@@ -42,14 +42,21 @@ The program uses `<thread>` and `<chrono>` for the dice animation. The cursor-co
 
 - Implement using vectors in C++, for dynamic array size updation
 - Better Snake and Ladder representation. 
-Current
-Snake		Ladder
-S			#
-S			#
-S			#
+Current:
 
+```text
+Snake
+S
+S
+S
 
+Ladder
+#
+#
+#
+```
 
+## Game Flow
 ```text
 Roll the die
     |
